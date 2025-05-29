@@ -55,10 +55,36 @@ h1 {
   text-align: center;
   opacity: 0.7;
   background-color: var(--accent1-color);
-  color: #fff; /* white text - make sure there is enough contrast with the background-color */
+  color: var(--secondary-color); 
 }
 
 .hero article img {
   float: right;
   width: 125px;
+}
+header {
+  display: grid;
+  grid-template-columns: auto 1fr; 
+  align-items: center;
+  padding: 1rem 5%;
+}
+header img {
+  height: 100px;
+  width: auto;
+}
+header nav {
+  display: flex;
+  gap: 1.5rem;
+  justify-self: end;
+}
+header nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 500;
+  margin: 5px;
+  padding: 0.5rem 0;
+  position: relative;
+}
+header nav a:hover {
+  color: var(--secondary-color);
 }
