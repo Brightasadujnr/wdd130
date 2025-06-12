@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Asadu Bright Junior | WDD 130</title>
+    <meta name="description" content="My name is Bright, an online student of BYUI who loves computer.">
+    <meta name="author" content="Bright Asadu Junior">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gorditas&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Whitewater Rafting Logo" width="200">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <aside class="contact-team-container">
+        <div class="contact-page">
+            <h1>Contact Information</h1>
+            <div class="contact-details">
+                <p><strong>Address:</strong> Kumasi, Ashanti Region, Ghana</p>
+                <p><strong>Phone:</strong> <a href="tel:+233559062912">+233 (559) 062-912</a></p>
+                <p><strong>Support Email:</strong> <a href="mailto:assaybouy@gmail.com">assaybouy@gmail.com</a></p>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1127900.5219925384!2d-1.4296962307628964!3d6.628649185346503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sgh!4v1749762228831!5m2!1sen!2sgh" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <div class="team-section">
+            <h2>Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="employee-card">
+                    <img src="images/employee_01.webp" alt="Sandra Quaning - Marketing Director">
+                    <h3>Sandra Quaning</h3>
+                    <p>Marketing Director</p>
+                </div>
+                <div class="employee-card">
+                    <img src="images/employee_02.webp" alt="Alexander Korankye - Lead Developer">
+                    <h3>Alexander Korankye</h3>
+                    <p>Lead Developer</p>
+                </div>
+                <div class="employee-card">
+                    <img src="images/employee_03.webp" alt="Taylor Amponsah - Customer Support">
+                    <h3>Taylor Amponsah</h3>
+                    <p>Customer Support</p>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <form class="contact-form" action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label>Purpose of Message</label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="general" name="purpose" value="General Inquiry" required>
+                        <label for="general">General Inquiry</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                        <label for="reservation">Reservation Question</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                        <label for="suggestion">Website Suggestion</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+</main>
+    <footer>
+        <p>&copy;2023 Whitewater Rafting Adventures | Designed by Bright Asadu Junior</p>
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/facebook_icon.png" alt="Facebook" width="32" height="32">
+            </a>
+            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/twitter_icon.svg" alt="Twitter" width="32" height="32">
+            </a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/instagram_icon.png" alt="Instagram" width="32" height="32">
+            </a>
+        </nav>
+        <a href="https://app.moqups.com/LyelqPEq6YUy9pggl2aReDwCCBL3XG99/view/page/ad64222d5" rel="contact Us wireframe"></a>
+    </footer>
+</body>
+</html>
