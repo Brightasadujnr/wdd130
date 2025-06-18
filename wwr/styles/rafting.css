@@ -318,3 +318,202 @@ footer p {
     color: #7f8c8d;
     font-size: 0.9rem;
 }
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+/* Trips Page Specific Styles */
+.trips-main {
+    background-image: url('../images/rafting-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 2rem;
+}
+
+/* Dark overlay for better text contrast */
+.trips-main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Added background color */
+    z-index: 0;
+}
+
+/* Ensure content stays above the background */
+.trips-hero,
+.trip-comparison,
+.trip-details,
+.equipment-section,
+.trip-cta-section {
+    position: relative;
+    z-index: 1;
+}
+
+/* Hero Section - Removed duplicate background */
+.trips-hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.trips-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.trips-hero a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.trips-hero a:hover {
+    background-color: #0096c7;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Table Styles */
+.trip-comparison {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #004e7c;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Trip Articles */
+.trip-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.trip-article {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.trip-article:hover {
+    transform: translateY(-5px);
+}
+
+.trip-article h2 {
+    color: #004e7c;
+    margin-bottom: 1rem;
+}
+
+.trip-article ul {
+    padding-left: 1.25rem;
+    margin: 1rem 0;
+}
+
+.trip-article a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Equipment Gallery */
+.equipment-section {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.equipment-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.equipment-gallery img {
+    border: 3px solid white;
+    border-radius: 8px;
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.equipment-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Call to Action */
+.trip-cta-section {
+    text-align: center;
+    margin: 3rem 0;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+}
+
+.trip-cta-section h2 {
+    margin-bottom: 1.5rem;
+    color: #004e7c;
+}
+
+.trip-cta-section a {
+    display: inline-block;
+    background-color: #0077b6;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.trip-cta-section a:hover {
+    background-color: #023e8a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+

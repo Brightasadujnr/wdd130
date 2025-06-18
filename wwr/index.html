@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Asadu Bright Junior | WDD 130</title>
+    <meta name="description" content="My name is Bright, an online student of BYUI who loves computer.">
+    <meta name="author" content="Bright Asadu Junior">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gorditas&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Whitewater Rafting Logo" width="200">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-banner">
+            
+            <div class="hero-overlay">
+                <h1>Experience the Thrill of Whitewater Rafting</h1>
+                <p>Adventure awaits on Ghana's most exciting rivers</p>
+                <a href="trips.html" class="cta-button">Book Your Adventure Today</a>
+            </div>
+        </section>
+
+        <section class="home-intro" aria-labelledby="welcome-heading">
+            <div class="intro-content">
+                <h2 id="welcome-heading">Welcome to Whitewater Rafting Adventures</h2>
+                <p>For over 25 years, we've been providing unforgettable rafting experiences for adventurers of all levels. Whether you're seeking a family-friendly float or an adrenaline-pumping Class V challenge, we have the perfect trip for you.</p>
+                <div class="intro-features">
+                    <div class="feature">
+                        <img src="images/image(3).webp" alt="" width="50" height="50">
+                        <h3>Safety First</h3>
+                        <p>Certified guides and top-quality equipment ensure your safety on every trip.</p>
+                    </div>
+                    <div class="feature">
+                        <img src="images/image(5).webp" alt="" width="50" height="50">
+                        <h3>Unmatched Experience</h3>
+                        <p>Our guides average 10+ years of rafting experience on Ghana's rivers.</p>
+                    </div>
+                    <div class="feature">
+                        <img src="images/image(3).webp" alt="" width="50" height="50">
+                        <h3>Eco-Friendly</h3>
+                        <p>We're committed to sustainable tourism and river conservation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="trip-highlights" aria-labelledby="trip-highlights-heading">
+            <h2 id="trip-highlights-heading">Popular Trips</h2>
+            <div class="trip-grid">
+                <article class="trip-card">
+                    <img src="images/image(1).webp" alt="Scenic river with mild rapids" loading="lazy" width="400" height="300">
+                    <div class="trip-info">
+                        <h3>Family Float</h3>
+                        <p>Perfect for beginners and families with children ages 8+. Enjoy scenic views and mild rapids.</p>
+                        <a href="trips.html#family-float" class="trip-button">Learn More</a>
+                    </div>
+                </article>
+                <article class="trip-card">
+                    <img src="images/image(2).webp" alt="Exciting whitewater rapids" loading="lazy" width="400" height="300">
+                    <div class="trip-info">
+                        <h3>Adventure Seeker</h3>
+                        <p>Challenge yourself with Class III-IV rapids. Recommended for physically fit participants.</p>
+                        <a href="trips.html#adventure-seeker" class="trip-button">Learn More</a>
+                    </div>
+                </article>
+                <article class="trip-card">
+                    <img src="images/image(4).webp" alt="Multi-day camping by the river" loading="lazy" width="400" height="300">
+                    <div class="trip-info">
+                        <h3>Multi-Day Expedition</h3>
+                        <p>Our most immersive experience with overnight camping along the river.</p>
+                        <a href="trips.html#expedition" class="trip-button">Learn More</a>
+                    </div>
+                </article>
+            </div>
+            <div class="trip-cta">
+                <a href="trips.html" class="cta-button">View All Trips</a>
+            </div>   
+        </section>
+
+        <section class="newsletter-signup" aria-labelledby="newsletter-heading">
+            <div class="newsletter-container">
+                <h2 id="newsletter-heading">Stay Updated</h2>
+                <p>Subscribe to our newsletter for special offers, trip updates, and rafting tips.</p>
+                <form class="newsletter-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="newsletter-email" class="visually-hidden">Email Address</label>
+                        <input type="email" id="newsletter-email" name="email" placeholder="Enter your email" required>
+                        <button type="submit" class="submit-btn">Subscribe</button>
+                    </div>
+                    <p class="privacy-notice">We respect your privacy. Unsubscribe at any time.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;2023 Whitewater Rafting Adventures | Designed by Bright Asadu Junior</p>
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/facebook_icon.png" alt="Facebook" width="32" height="32">
+            </a>
+            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/twitter_icon.svg" alt="Twitter" width="32" height="32">
+            </a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/instagram_icon.png" alt="Instagram" width="32" height="32">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
