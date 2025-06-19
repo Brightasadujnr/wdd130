@@ -24,6 +24,12 @@ header, main, footer {
   margin: 0 auto;
 }
 
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+
 h1, h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
@@ -132,7 +138,7 @@ footer {
   display: flex;
   gap: 20px;
   justify-content: flex-end;
-  
+
 }
 
 .socialmedia img {
@@ -145,6 +151,7 @@ footer {
 footer p {
   font-size: 16px;
 }
+
 .contact-form {
     max-width: 600px;
     margin: 2rem auto;
@@ -223,6 +230,19 @@ footer p {
     cursor: pointer;
     transition: background-color 0.3s;
     width: 100%;
+}
+.cta-button {
+    display: inline-block;
+    background-color: #0077cc;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #005fa3;
 }
 
 .contact-form .submit-btn:hover {
